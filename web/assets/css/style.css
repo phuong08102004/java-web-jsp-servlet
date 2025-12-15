@@ -1,0 +1,289 @@
+/* MENU CHỮ TRẮNG */
+.menu-link,
+.navbar .nav-link {
+    color: #fff !important;
+    font-weight: 600;
+    margin-right: 25px;
+}
+
+.menu-link:hover,
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #F3C623 !important;
+}
+
+/* Dropdown */
+.dropdown-menu a {
+    color: #000 !important;
+}
+.dropdown-menu a:hover {
+    background: #F3C623 !important;
+    color: #000 !important;
+}
+
+/* ICONS */
+/* Icon cách đều nhau */
+.menu-right .nav-item {
+    list-style: none;
+}
+
+/* Icon luôn màu trắng */
+.icon-link img {
+    filter: brightness(0) invert(1);
+    transition: 0.25s;
+}
+
+/* Hover chuyển sang vàng */
+.icon-link:hover img {
+    filter: brightness(1) sepia(1) saturate(500%) hue-rotate(10deg);
+}
+
+/* Badge giỏ hàng */
+.cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #F3C623;
+    color: black;
+    font-weight: bold;
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+
+/* LOGO GIỮA NAV */
+.nav-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* DẢI VÀNG WELCOME */
+.honey-welcome-bar {
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: white;
+    background-color: #F3C623;
+
+    background-image:
+        radial-gradient(circle at 10% 20%, rgba(255,255,255,0.25) 2%, transparent 3%),
+        radial-gradient(circle at 80% 70%, rgba(255,255,255,0.25) 2%, transparent 3%),
+        radial-gradient(circle at 50% 50%, rgba(255,255,255,0.25) 2%, transparent 3%);
+    background-size: 80px 80px;
+    background-repeat: repeat;
+}
+
+/* HERO BANNER */
+.honey-hero {
+    width: 100%;
+    height: 480px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('../images/jumbotron.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.honey-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.honey-hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+}
+
+.honey-hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.honey-hero-content p {
+    font-size: 20px;
+}
+
+/* PRODUCT CARD */
+.product-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    transition: 0.3s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+.product-img img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+.product-card:hover .product-img img {
+    transform: scale(1.06);
+}
+.product-info {
+    padding: 15px;
+    text-align: center;
+}
+.product-name {
+    font-size: 17px;
+    font-weight: 600;
+    height: 45px;
+}
+.product-price {
+    color: #d35400;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.btn-buy {
+    background: #F3C623;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.btn-buy:hover {
+    background: #e1b311;
+}
+
+/* FOOTER */
+/* NỀN XÁM ĐẬM CHO FOOTER */
+#footer-section-v2 .footer-main-content-v2 {
+    background-color: #313131;   /* màu xám đậm */
+    color: #fff;
+}
+
+/* Tiêu đề */
+.footer-heading-v2 {
+    color: #f3c623;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+/* Link trong footer */
+.footer-links-v2 a {
+    text-decoration: none;
+    color: rgba(255,255,255,0.7) !important;
+    display: block;
+    padding: 3px 0;
+    transition: 0.3s;
+}
+
+.footer-links-v2 a:hover {
+    color: #ffc107 !important;
+}
+
+/* Logo footer */
+.footer-logo-v2 {
+    filter: brightness(1.2);
+    margin-bottom: 12px;
+}
+
+/* PAYMENT (nhóm icon thanh toán) */
+.payment-logos-v2 {
+    max-width: 100%;
+    margin-top: 15px;
+}
+
+/* COPYRIGHT BAR */
+.footer-copyright-v2 {
+    background-color: #f3a607;
+    color: white;
+    position: relative;
+    font-weight: 500;
+}
+
+/* BACK TO TOP BUTTON */
+.back-to-top-btn {
+    position: absolute;
+    right: 15px;
+    top: -40px;
+    background-color: #f3c623;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 6px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*Register */
+.register-section {
+    padding: 60px 0;
+    background: #fafafa;
+}
+
+/* Thẻ form */
+.register-card {
+    background: #fff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.12);
+    border-left: 6px solid #F3C623;
+}
+
+.register-card h2 {
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+/* Input */
+.register-card .form-control {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.register-card .form-control:focus {
+    border-color: #F3C623;
+    box-shadow: 0 0 5px rgba(243, 198, 35, 0.5);
+}
+
+/* Nút vàng */
+.btn-honey {
+    background: #F3C623;
+    border: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-honey:hover {
+    background: #e1b311;
+}
+
+/* Ảnh minh họa */
+.honey-img {
+    max-width: 85%;
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
