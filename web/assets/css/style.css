@@ -287,3 +287,59 @@
     50% { transform: translateY(-8px); }
     100% { transform: translateY(0); }
 }
+.honey-bg {
+    background: #fff9e6;
+}
+
+.honey-card {
+    border-radius: 10px;
+    border: 1px solid #f3c623;
+}
+
+.honey-cart-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.honey-summary {
+    background: #fff;
+    border-radius: 10px;
+    border: 2px solid #f3c623;
+}
+
+.honey-price {
+    color: #d35400;
+    font-weight: bold;
+}
+
+.honey-btn {
+    background-color: #f3c623;
+    color: #000;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.honey-btn:hover {
+    background-color: #f1b700;
+}
+.honey-cart-card {
+    border-radius: 10px;
+    border: 1px solid #eee;
+}
+
+.honey-cart-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.honey-price {
+    color: #f3a607;
+    font-weight: bold;
+    font-size: 16px;
+}
