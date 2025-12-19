@@ -56,9 +56,9 @@
 
                     <!-- CART -->
                     <li class="nav-item me-3 position-relative">
-                        <a href="#" class="nav-link icon-link">
+                        <a href="cart" class="nav-link icon-link">
                             <img src="https://cdn-icons-png.flaticon.com/512/833/833314.png" width="24">
-                            <span class="cart-badge">0</span>
+                            <span class="cart-badge">${cart.size()}</span>
                         </a>
                     </li>
 
