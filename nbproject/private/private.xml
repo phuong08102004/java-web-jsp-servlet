@@ -32,6 +32,9 @@
             <file>file:/D:/Data%20NetBeans/apache-tomcat-10.1.43/matong/src/java/nhphuong/data/driver/MySQLDriver.java</file>
             <file>file:/D:/Data%20NetBeans/apache-tomcat-10.1.43/matong/src/java/nhphuong/data/impl/UserImpl.java</file>
             <file>file:/D:/Data%20NetBeans/apache-tomcat-10.1.43/matong/src/java/nhphuong/data/model/Product.java</file>
+            <file>file:/D:/Data%20NetBeans/apache-tomcat-10.1.43/matong/src/java/nhphuong/data/web/CartServlet.java</file>
+            <file>file:/D:/Data%20NetBeans/apache-tomcat-10.1.43/matong/web/views/cart.jsp</file>
+            <file>file:/D:/Data%20NetBeans/apache-tomcat-10.1.43/matong/web/inc/_cart.jsp</file>
         </group>
     </open-files>
 </project-private>
