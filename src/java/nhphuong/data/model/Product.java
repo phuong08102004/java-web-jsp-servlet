@@ -4,6 +4,10 @@
  */
 package nhphuong.data.model;
 
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 /**
  *
  * @author Asus ROG G513IH
@@ -14,17 +18,25 @@ public class Product {
     String name;
     String image;
     double price;
-    int quantily;
+    int quantity;
     boolean status;
 
-    public Product(int id, int id_category, String name, String image, double price, int quantily, boolean status) {
+    public Product(int id, int id_category, String name, String image, double price, int quantity, boolean status) {
         this.id = id;
         this.id_category = id_category;
         this.name = name;
         this.image = image;
         this.price = price;
-        this.quantily = quantily;
+        this.quantity = quantity;
         this.status = status;
+    }
+    
+    public Product(ResultSet rs) throws SQLException {
+        this.id = rs.getInt("id");
+        this.name = rs.getString("name");
+        this.image = rs.getString("image");
+        this.price = rs.getDouble("price");
+        this.quantity = 1;
     }
 
     public int getId() {
@@ -67,12 +79,12 @@ public class Product {
         this.price = price;
     }
 
-    public int getQuantily() {
-        return quantily;
+    public int getQuantity() {
+        return quantity;
     }
 
-    public void setQuantily(int quantily) {
-        this.quantily = quantily;
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
     public boolean isStatus() {
