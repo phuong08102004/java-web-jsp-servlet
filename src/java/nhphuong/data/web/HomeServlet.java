@@ -9,6 +9,7 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import java.util.ArrayList;
 import java.util.List;
 import nhphuong.data.dao.Database;
 import nhphuong.data.model.Category;
@@ -31,6 +32,10 @@ public class HomeServlet extends HttpServlet {
         request.setAttribute("title", "Honey Bee");
         String id_category = request.getParameter("id_category");
         request.setAttribute("id_category", id_category);
+        addProductToCart(request);
+        
+        
+        
         request.getRequestDispatcher("./views/home.jsp").include(request, response);
         
     }
@@ -42,5 +47,28 @@ public class HomeServlet extends HttpServlet {
         
     }
     
-
+    void addProductToCart(HttpServletRequest request){
+        int id_product;
+        try{
+            id_product = Integer.parseInt(request.getParameter("id_product"));
+        }catch(Exception e){
+            id_product=0;
+        }
+        List<Product> cart = (List<Product>)request.getSession().getAttribute("cart");
+        if(cart==null)cart = new ArrayList<>();
+        if(id_product>0){
+            Product product = Database.getProductDao().findProduct(id_product);
+            boolean isProductInCart=false;
+            for(Product pro:cart)
+                if(pro.getId()==id_product){
+                    pro.setQuantity(pro.getQuantity() +1);
+                    isProductInCart=true;
+                }
+            if(!isProductInCart)cart.add(product);
+        }
+        request.getSession().setAttribute("cart", cart);
+    }
+    
+    
+    
 }
