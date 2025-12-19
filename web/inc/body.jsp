@@ -25,7 +25,14 @@
                             <div class="product-info">
                                 <h5 class="product-name">${product.name}</h5>
                                 <p class="product-price">${product.price} VNĐ</p>
-                                <button class="btn-buy">Thêm vào giỏ</button>
+                                <a href="
+                                   <c:if test="${user==null}">
+                                       login
+                                   </c:if>
+                                   <c:if test="${user!=null}">
+                                       home?id_product=${product.id}
+                                   </c:if>
+                                   " class="btn-buy">Thêm vào giỏ</a>
                             </div>
 
                         </div>
@@ -68,7 +75,14 @@
                             <div class="product-info">
                                 <h5 class="product-name">${product.name}</h5>
                                 <p class="product-price">${product.price} VNĐ</p>
-                                <button class="btn-buy">Thêm vào giỏ</button>
+                                <a href="
+                                   <c:if test="${user==null}">
+                                       login
+                                   </c:if>
+                                   <c:if test="${user!=null}">
+                                       home?id_product=${product.id}&id category=${category.id}
+                                   </c:if>
+                                   " class="btn-buy">Thêm vào giỏ</a>
                             </div>
 
                         </div>
